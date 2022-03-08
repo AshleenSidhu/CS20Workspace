@@ -21,7 +21,7 @@ public class RandomNum
 	{
 		int min, max, random;
 		Scanner input = new Scanner(System.in);
-		Random r = new Random();
+		Random num = new Random();
 		
 		System.out.print("Enter a minimum number: ");//user enters min number
 		min = input.nextInt();
@@ -31,7 +31,7 @@ public class RandomNum
 		
 		input.close();
 		
-		random = r.nextInt(max)+min;//generates num given in range
+		random = num.nextInt(max)+min;//generates num given in range
 		
 		System.out.println("\nNumber is: " + random);//displays number to user
 		
