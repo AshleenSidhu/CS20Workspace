@@ -12,6 +12,8 @@ Course: Computer Programming 20
 
 package chapter2;
 
+//I just made a change
+
 public class BinaryNumbers 
 {
 	public static void main(String[] args)
