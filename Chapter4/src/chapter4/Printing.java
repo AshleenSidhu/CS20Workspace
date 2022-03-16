@@ -61,7 +61,7 @@ public class Printing
 			System.out.print("Total cost is: $" + cost);
 		}
 		
-		else //user does not enter a number 
+		else //user does not enter a number  
 		{
 			System.out.println("Error invalid answer.");
 		}

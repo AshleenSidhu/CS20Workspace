@@ -19,21 +19,20 @@ public class RandomNum
 {
 	public static void main(String[] args)
 	{
-		int min, max, random;
+		int min, max, randomNum;
 		Scanner input = new Scanner(System.in);
 		Random num = new Random();
 		
 		System.out.print("Enter a minimum number: ");//user enters min number
 		min = input.nextInt();
 		
-		System.out.print("\nEnter a maximum number: ");//user enters max number
+		System.out.print("Enter a maximum number: ");//user enters max number
 		max = input.nextInt();
-		
 		input.close();
 		
-		random = num.nextInt(max)+min;//generates num given in range
+		randomNum = num.nextInt(max)+min;//generates num given in range
 		
-		System.out.println("\nNumber is: " + random);//displays number to user
+		System.out.println("Number is: " + randomNum);//displays number to user
 		
 	}
 }
