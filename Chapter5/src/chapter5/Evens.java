@@ -18,16 +18,18 @@ public class Evens
 {
 	public static void main(String[] args)
 	{
-		int num;
+		int num = 0;
+		int even = 2;
 		
 		Scanner input = new Scanner(System.in);
 		
-		for(num =1; num <=20; num++) 
+		while(num != even) 
 		{
-			System.out.print("Enter a number: ");
+			System.out.println("Enter a starting number");
 			num = input.nextInt();
 			input.close();
 		}
-		
 	}
+		
 }
+
