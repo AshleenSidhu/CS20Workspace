@@ -1,6 +1,6 @@
 /*
 
-Program: SurfsUp.java          Last Date of this Revision: 05-Mar-2022
+Program: .java          Last Date of this Revision: 05-Mar-2022
 
 Purpose: Create a SurfsUp application to display "Great day for surfing!" When the waves are 6 feet or over, 
          "Go body boarding!" when the waves are between 3 and 6 feet, "Go for a swim." when the waves are from 0 to 3 feet, 
