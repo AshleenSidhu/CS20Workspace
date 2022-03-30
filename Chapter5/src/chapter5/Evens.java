@@ -28,6 +28,11 @@ public class Evens
 			System.out.println("Enter a starting number");
 			num = input.nextInt();
 			input.close();
+			
+			if(num>=even)
+			{
+				System.out.println("Display even numbers: " + num);
+			}
 		}
 	}
 		

@@ -16,7 +16,7 @@ public class Class
 		
 		for(int day =1; day <=5; day++) 
 		{
-			System.out.print("Enter the number of visitors on day " + day + ":");
+			System.out.print("Enter the number of visitors on day " + day + ": ");
 			numVisitors = input.nextInt();
 			totalVisitors = totalVisitors + numVisitors;
 		}
@@ -30,11 +30,11 @@ public class Class
 
 /* Screen Dump
 
-Enter the number of visitors on day 1:2
-Enter the number of visitors on day 2:1
-Enter the number of visitors on day 3:0
-Enter the number of visitors on day 4:3
-Enter the number of visitors on day 5:4
+Enter the number of visitors on day 1: 2
+Enter the number of visitors on day 2: 1
+Enter the number of visitors on day 3: 0
+Enter the number of visitors on day 4: 3
+Enter the number of visitors on day 5: 4
 
 The average number of visitors is 2
 
