@@ -111,5 +111,7 @@ public class TimeConverter
 		{
 			hourstodays(); 
 		}
+		
+		input.close();
 	}
 }
