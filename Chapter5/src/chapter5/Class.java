@@ -13,7 +13,6 @@ public class Class
 		
 		Scanner input = new Scanner(System.in);
 		
-		
 		for(int day =1; day <=5; day++) 
 		{
 			System.out.print("Enter the number of visitors on day " + day + ": ");
