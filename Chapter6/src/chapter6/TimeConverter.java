@@ -84,7 +84,12 @@ public class TimeConverter
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("1: hours to minutes \n2: days to hours \n3: minutes to hours \n4: hours to days \n\nEnter a number 1-4 for what you want to covert: ");
+		System.out.print("1: hours to minutes"
+				+ "\n2: days to hours "
+				+ "\n3: minutes to hours "
+				+ "\n4: hours to days"
+				+ "\n\nEnter a number for one of the choices above: ");
+		
 		option = input.nextInt();
 	
 		if(option == 1)
@@ -115,3 +120,27 @@ public class TimeConverter
 		input.close();
 	}
 }
+
+/* Screen Dump 
+
+Enter a number from below: 
+
+1: hours to minutes
+2: days to hours 
+3: minutes to hours 
+4: hours to days1
+Enter the number of hours: 3
+180 minutes in 3 hours.
+
+
+
+1: hours to minutes
+2: days to hours 
+3: minutes to hours 
+4: hours to days
+
+Enter a number for one of the choices above:2
+Enter the number of days: 6
+144 hours in 6 days.
+
+ */
