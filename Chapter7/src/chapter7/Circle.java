@@ -27,8 +27,4 @@ public class Circle
 
 /* Screen Dump 
 
-Enter the number of copies to be printed: 1001
-Price per copy is: $0.25
-Total cost is: $250.25
-
  */
