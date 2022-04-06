@@ -11,16 +11,20 @@ Course: Computer Programming 20
 */
 package chapter7;
 
-public class Circle 
+public class Circle
 {
-	public static void circumference(int Circle)
+	public static void circumference()
 	{
 		
 	}
 	
 	public static void main(String[] args)
 	{
+		Circle spot = new Circle();
 		
+		spot.setRadius(30);
+		System.out.println("Circle radius: " + spot.getRadius());
+		System.out.println("Circle circumference: " + spot.circumference());
 	}
 }
 
