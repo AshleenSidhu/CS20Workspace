@@ -1,6 +1,6 @@
 package CRT;
 
-public class crt 
+public class CRT4 
 {
 	public static void main(String[] args)
 	{
