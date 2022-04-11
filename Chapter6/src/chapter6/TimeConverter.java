@@ -141,4 +141,14 @@ Enter a number for one of the choices above:2
 Enter the number of days: 6
 144 hours in 6 days.
 
+
+1: hours to minutes
+2: days to hours 
+3: minutes to hours 
+4: hours to days
+
+Enter a number for one of the choices above: 1
+Enter the number of hours: 20
+1200 minutes in 20 hours.
+
  */

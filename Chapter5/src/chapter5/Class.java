@@ -1,4 +1,14 @@
+/*
 
+Program: Grade.java          Last Date of this Revision: 06-Mar-2022
+
+Purpose: Create a Grade application that prompts the user for th percentage earned on test or other graded work and then displays the corresponding letter grade. 
+
+Author: Ashleen Sidhu, 
+School: CHHS
+Course: Computer Programming 20
+ 
+*/
 package chapter5;
 
 import java.util.Scanner;
@@ -13,7 +23,7 @@ public class Class
 		
 		Scanner input = new Scanner(System.in);
 		
-		for(int day =1; day <=5; day++) 
+		for(int day = 1; day <= 5; day++) 
 		{
 			System.out.print("Enter the number of visitors on day " + day + ": ");
 			numVisitors = input.nextInt();
