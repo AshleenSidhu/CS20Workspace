@@ -1,8 +1,8 @@
 /*
 
-Program: TimeConverter.java          Last Date of this Revision: 05-Mar-2022
+Program: PrimeNumber.java          Last Date of this Revision: 05-Mar-2022
 
-Purpose: Create a TimeConverter application that allows the user to choose among converting hours to minutes, days to hours, minutes to hours, or hours to days. 
+Purpose: Modify the PrimeNumber application created in chapter 5 Exercise 1 to include method named isPrime().
 
 Author: Ashleen Sidhu, 
 School: CHHS
