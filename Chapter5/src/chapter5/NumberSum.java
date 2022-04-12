@@ -14,3 +14,8 @@ package chapter5;
 public class NumberSum {
 
 }
+
+/* Screen Dump 
+
+
+ */
