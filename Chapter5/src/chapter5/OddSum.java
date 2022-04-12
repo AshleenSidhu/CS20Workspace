@@ -28,8 +28,8 @@ public class OddSum
 		do
 		{
 			System.out.println(num);
-			num+=2;
-			odd+=num;
+			num += 2;
+			odd += num;
 		}
 		
 		while(num<n);
