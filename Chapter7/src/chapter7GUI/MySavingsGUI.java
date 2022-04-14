@@ -3,26 +3,19 @@ package chapter7GUI;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import javax.swing.JTextField;
-import javax.swing.text.JTextComponent;
-
-import java.awt.BorderLayout;
 import javax.swing.JPanel;
-import javax.swing.JLabel;
+import javax.swing.JTextField;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
-import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
 
 public class MySavingsGUI {
 
 	private JFrame frame;
-	private JTextField Fn;
-	private JTextField Ln;
-	private JTextField M1;
-	private JTextField M2;
+	private JTextField textField;
+	private JTextField txtAddA;
 
 	/**
 	 * Launch the application.
@@ -52,81 +45,56 @@ public class MySavingsGUI {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 307);
+		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(10, 11, 414, 246);
-		frame.getContentPane().add(panel);
 		panel.setLayout(null);
+		panel.setBounds(10, 11, 414, 239);
+		frame.getContentPane().add(panel);
 		
-		JLabel firstN = new JLabel("My Name");
-		firstN.setFont(new Font("Times New Roman", Font.BOLD, 11));
-		firstN.setBounds(10, 21, 72, 28);
-		panel.add(firstN);
+		textField = new JTextField();
+		textField.setText("Bank");
+		textField.setColumns(10);
+		textField.setBounds(159, 0, 86, 20);
+		panel.add(textField);
 		
-		Fn = new JTextField();
-		Fn.setBounds(73, 17, 298, 32);
-		panel.add(Fn);
-		Fn.setColumns(10);
+		JButton btnNewButton = new JButton("Menu");
+		btnNewButton.setBounds(23, 39, 89, 23);
+		panel.add(btnNewButton);
 		
-		JLabel lastN = new JLabel("Last Name");
-		lastN.setFont(new Font("Times New Roman", Font.BOLD, 11));
-		lastN.setBounds(10, 79, 72, 21);
-		panel.add(lastN);
+		txtAddA = new JTextField();
+		txtAddA.setColumns(10);
+		txtAddA.setBounds(276, 73, 111, 20);
+		panel.add(txtAddA);
 		
-		Ln = new JTextField();
-		Ln.setBackground(Color.WHITE);
-		Ln.setColumns(10);
-		Ln.setBounds(73, 73, 298, 32);
-		panel.add(Ln);
+		JLabel lblNewLabel = new JLabel("1. Show total in bank");
+		lblNewLabel.setBounds(23, 73, 111, 20);
+		panel.add(lblNewLabel);
 		
-		JLabel lblMark = new JLabel("Mark 1");
-		lblMark.setFont(new Font("Times New Roman", Font.BOLD, 11));
-		lblMark.setBounds(22, 133, 47, 21);
-		panel.add(lblMark);
+		JLabel lblNewLabel_1 = new JLabel("1. Show total in bank");
+		lblNewLabel_1.setBounds(23, 73, 62, 20);
+		panel.add(lblNewLabel_1);
 		
-		M1 = new JTextField();
-		M1.setBounds(73, 129, 47, 28);
-		panel.add(M1);
-		M1.setColumns(10);
+		JLabel lblNewLabel_2 = new JLabel("2. Add a penny");
+		lblNewLabel_2.setBounds(23, 104, 102, 20);
+		panel.add(lblNewLabel_2);
 		
-		JLabel lblMark_2 = new JLabel("Mark 2");
-		lblMark_2.setFont(new Font("Times New Roman", Font.BOLD, 11));
-		lblMark_2.setBounds(163, 133, 47, 21);
-		panel.add(lblMark_2);
+		JLabel lblNewLabel_2_1 = new JLabel("3. Add a nickel");
+		lblNewLabel_2_1.setBounds(23, 135, 102, 20);
+		panel.add(lblNewLabel_2_1);
 		
-		M2 = new JTextField();
-		M2.setColumns(10);
-		M2.setBounds(210, 129, 47, 28);
-		panel.add(M2);
+		JLabel lblNewLabel_2_2 = new JLabel("4. Add a dime");
+		lblNewLabel_2_2.setBounds(23, 166, 102, 20);
+		panel.add(lblNewLabel_2_2);
 		
-		JLabel text = new JLabel("");
-		text.setBounds(10, 172, 390, 47);
-		panel.add(text);
+		JLabel lblNewLabel_2_3 = new JLabel("5. Add a quarter");
+		lblNewLabel_2_3.setBounds(23, 197, 102, 20);
+		panel.add(lblNewLabel_2_3);
 		
-		JButton Submit = new JButton("Submit");
-		Submit.addActionListener(new ActionListener()
-		{
-		public void actionPerformed(ActionEvent e)
-			{
-				String firstN = Fn.getText();
-				String lastN = Ln.getText();
-				
-				dis.setText(firstN + " " + lastN);
-				
-				double mark1 = Double.parseDouble(M1.getText());
-				double mark2 = Double.parseDouble(M2.getText());
-				double avg = (mark1 + mark2)/2;
-				
-				dis.setText(firstN + " " + lastN + "your average is: " + avg);
-			}
-		}
-		
-		Submit.setBackground(Color.GRAY);
-		Submit.setBounds(282, 132, 89, 23);
-		panel.add(Submit);
-		
+		JLabel lblNewLabel_2_4 = new JLabel("Enter your choice");
+		lblNewLabel_2_4.setBounds(181, 73, 102, 20);
+		panel.add(lblNewLabel_2_4);
 	}
 }
