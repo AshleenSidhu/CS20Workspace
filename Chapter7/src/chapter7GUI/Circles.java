@@ -14,12 +14,11 @@ package chapter7GUI;
 public class Circles 
 {
 	private static final double PI = 3.14;
-	private double radius, circumference;
+	private double radius; //variables
 	
 	public Circles() //constructor method
 	{
-		radius = 1; //defult radius
-		circumference = 1; //defult circumference
+		radius = 1;           //default radius
 	}
 	
 	public void setRadius(double newRadius)
@@ -27,11 +26,11 @@ public class Circles
 		radius = newRadius;
 	}
 	
-	public double area()
+	public double circumference()
 	{
-		double circleArea;
-		circleArea = PI * radius * radius;
-		return(circleArea);
+		double circleC;
+		circleC = PI * radius * radius;
+		return(circleC);
 	}
 	
 	public double getRadius()
@@ -43,7 +42,7 @@ public class Circles
 	{
 		Circles spot = new Circles();
 		
-		spot,setRadius(3);
+		spot.setRadius(3);
 		System.out.println("Circle radius: " + spot.getRadius);
 		System.out.println("Circle Circumference: " + spot.circumference());
 	}
