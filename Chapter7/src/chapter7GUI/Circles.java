@@ -14,11 +14,12 @@ package chapter7GUI;
 public class Circles 
 {
 	private static final double PI = 3.14;
-	private double radius;
+	private double radius, circumference;
 	
 	public Circles() //constructor method
 	{
 		radius = 1; //defult radius
+		circumference = 1; //defult circumference
 	}
 	
 	public void setRadius(double newRadius)
@@ -38,6 +39,12 @@ public class Circles
 		return(radius);
 	}
 	
-	public static main(String{} {
- args)
+	public static void main(String[] args)
+	{
+		Circles spot = new Circles();
+		
+		spot,setRadius(3);
+		System.out.println("Circle radius: " + spot.getRadius);
+		System.out.println("Circle Circumference: " + spot.circumference());
+	}
 }
