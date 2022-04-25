@@ -43,7 +43,7 @@ public class Circles
 		Circles spot = new Circles();
 		
 		spot.setRadius(3);
-		System.out.println("Circle radius: " + spot.getRadius);
+		System.out.println("Circle radius: " + spot.getRadius());
 		System.out.println("Circle Circumference: " + spot.circumference());
 	}
 }
