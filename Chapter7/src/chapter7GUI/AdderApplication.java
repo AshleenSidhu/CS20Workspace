@@ -1,5 +1,6 @@
 package chapter7GUI;
 
-public class AdderApplication {
+public class AdderApplication 
+{
 
 }

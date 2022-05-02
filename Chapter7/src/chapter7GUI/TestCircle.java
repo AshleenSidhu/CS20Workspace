@@ -1,3 +1,14 @@
+/*
+
+Program: Circle.java          Last Date of this Revision: 5-Nov-2020
+
+Purpose: 
+
+Author: Your Name, 
+School: CHHS
+Course: Computer Programming 20
+ 
+*/
 package chapter7GUI;
 
 public class TestCircle 
