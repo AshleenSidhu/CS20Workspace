@@ -1,8 +1,9 @@
 /*
 
-Program: Circle.java          Last Date of this Revision: 05-Mar-2022
+Program: Circle.java          Last Date of this Revision: 02-May-2022
 
-Purpose:
+Purpose: Modify the Circle class to include a member named circumference, displayAreaFormula and to include
+         an overhead constructor that accepts the radius of the Circle object.
 
 Author: Ashleen Sidhu, 
 School: CHHS
