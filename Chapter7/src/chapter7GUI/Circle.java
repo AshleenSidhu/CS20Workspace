@@ -20,7 +20,7 @@ public class Circle
 	
 	public Circle()  //constructor method
 	{
-		radius = 1;     //radius initialized to 1
+		radius = 1;  //radius initialized to 1
 	}
 	
 	
