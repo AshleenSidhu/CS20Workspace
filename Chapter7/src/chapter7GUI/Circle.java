@@ -24,21 +24,15 @@ public class Circle
 		radius = 1;  //radius initialized to 1
 	}
 	
-	
-	
 	public Circle(double r) //circle object created with radius r
 	{
 		radius = r;
 	}
 
-	
-	
 	public void setRadius(double newRadius) //changes the radius of the circle
 	{
 		radius = newRadius;
 	}
-	
-	
 	
 	public double area() //calculates the area of a circle
 	{
@@ -49,8 +43,6 @@ public class Circle
 		return(circleArea);
 	}
 	
-	
-	
 	public double circumference() //calculates the circumference of a circle
 	{
 		double circleC;
@@ -60,13 +52,10 @@ public class Circle
 		return(circleC);
 	}
 	
-	
-	
 	public double getRadius() //returns the radius of the circle
 	{
 		return(radius);
 	}
-	
 	
 	public boolean equals(Object c) //c is a circle object, determines if the object is equal to another
 	{
@@ -94,12 +83,10 @@ public class Circle
 	}
 	
 	
-	
 	public static void displayCircumferenceFormula()
 	{
 		System.out.println("\nThe formula for the circumference of a circle is 2 * radius * Pi");
 	}
-	
 	
 	
 	public static void main(String[] args)
