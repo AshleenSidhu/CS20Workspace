@@ -23,7 +23,7 @@ public class Circle
 	{
 		radius = 1;  //radius initialized to 1
 	}
-
+	
 	
 	
 	public Circle(double r) //circle object created with radius r
