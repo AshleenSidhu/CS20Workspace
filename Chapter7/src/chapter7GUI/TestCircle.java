@@ -1,6 +1,6 @@
 /*
 
-Program: Circle.java          Last Date of this Revision: 02-May-2022
+Program: TestCircle.java          Last Date of this Revision: 02-May-2022
 
 Purpose: Modify the Circle class to override the equal() and toString() methods and modify the existing client code
          to test the new methods.
