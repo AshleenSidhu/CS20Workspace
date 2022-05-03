@@ -15,6 +15,7 @@ package chapter7GUI;
 public class Circle 
 {
 	private static final double PI = 3.14; //class constant
+	
 	private double radius; //variables
 	
 	
@@ -87,7 +88,7 @@ public class Circle
 	{
 		String circleString;
 		
-		circleString = "Circle circumference: " + circumference();
+		circleString = "The circle circumference is " + circumference();
 		
 		return(circleString);
 	}

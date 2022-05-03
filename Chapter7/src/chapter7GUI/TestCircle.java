@@ -45,9 +45,9 @@ public class TestCircle
 			System.out.println("Objects are not equal.");
 		}
 		
-		System.out.println(box1);
+		System.out.println(box1 + " for the radius of 3.0");
 		
-		System.out.println(box2);
+		System.out.println(box2 + " for the radius of 4.0");
 		
 	}
 }
