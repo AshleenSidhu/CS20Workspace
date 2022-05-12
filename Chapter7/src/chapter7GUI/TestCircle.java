@@ -51,3 +51,19 @@ public class TestCircle
 		
 	}
 }
+
+/* Screen Dump 
+
+Circle radius: 5.0
+Circle circumference: 31.400000000000002
+
+The formula for the circumference of a circle is 2 * radius * Pi
+
+Circle radius: 3.0
+Circle radius: 4.0
+Objects are not equal.
+The circle circumference is 18.84 for the radius of 3.0
+The circle circumference is 25.12 for the radius of 4.0
+
+ 
+*/ 

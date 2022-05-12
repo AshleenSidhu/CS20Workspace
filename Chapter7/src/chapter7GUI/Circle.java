@@ -34,15 +34,6 @@ public class Circle
 		radius = newRadius;
 	}
 	
-	public double area() //calculates the area of a circle
-	{
-		double circleArea;
-		
-		circleArea = PI * radius * radius;
-		
-		return(circleArea);
-	}
-	
 	public double circumference() //calculates the circumference of a circle
 	{
 		double circleC;
@@ -101,3 +92,10 @@ public class Circle
 	}
 	
 }
+
+/* Screen Dump 
+ 
+Circle radius: 3.0
+Circle Circumference: 18.84
+ 
+*/ 
