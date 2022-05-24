@@ -2,7 +2,7 @@
 
 Program: .java          Last Date of this Revision: 02-May-2022
 
-Purpose: 
+Purpose: Create a Squares application that stores the square of an element's index in an integer array of 5 elements.
 
 Author: Ashleen Sidhu, 
 School: CHHS
@@ -28,7 +28,7 @@ public class Squares
 	
 	public static void main(String[] args)
 	{
-		int arr[] = {-6, -3, -1, 2, 4, 5};
+		int arr[] = {1, 2, 3 ,4 ,5};
 		
 		int num = arr.length;
 		
@@ -54,6 +54,9 @@ public class Squares
 
 /* Screen Dump 
 
+-6, -3, -1, 2, 4, 5
+
+
 -6 
 -3 
 -1 
@@ -70,5 +73,17 @@ After sort:
 65536 
 
 
+1 
+2 
+3 
+4 
+5 
+ 
+After sort: 
+1 
+3 
+4 
+16 
+625 
  
 */ 

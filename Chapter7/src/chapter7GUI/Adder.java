@@ -15,48 +15,57 @@ import java.util.Scanner;
 
 public class Adder 
 {
-	private int randomNum1, randomNum2;
-	private int answer;
-	private int correctAnswer;
-		
-	public Adder()
+	public int wrongAnswer;
+	
+	public Adder(int w)
 	{
-		randomNum1 = (int)(Math.random() * 10);
-		randomNum2 = (int)(Math.random() * 10); 
+		w = wrongAnswer;
 	}
 	
-	public void createProblem()
+	public static void countPoints()
 	{
 		Scanner input = new Scanner(System.in);
 		
-		correctAnswer = randomNum1 + randomNum2;
-		
-		System.out.print(randomNum1 + " + " + randomNum2 + " = ");
-		
-		answer = input.nextInt();
-	
-	}
-	
-	public void announcePoints()
-	{
-		boolean continueLoop = true;
-		
-		if(answer == correctAnswer)
+		if(answer = correctAnswer )
 		{
-			System.out.println(answer == correctAnswer ? "Correct." : "Wrong.");
+			System.out.println("Correct");
+			
 		}
-		else 
-		{
-			System.out.println("Your score is: ");
-			continueLoop = false;
-		}
-		
 	}
 	
 	public static void main(String[] args)
 	{
-	
+		int randomNum1, randomNum2;
+		int answer;
+		int correctAnswer;
 		
+		boolean continueLoop = true;
+		
+		Scanner input = new Scanner(System.in);
+		
+		while(continueLoop)
+		{
+			randomNum1 = (int)(Math.random() * 10);
+			randomNum2 = (int)(Math.random() * 10);
+			
+			correctAnswer = randomNum1 + randomNum2;
+			
+			System.out.print(randomNum1 + " + " + randomNum2 + " = ");
+			
+			answer = input.nextInt();
+			
+			if(answer != -1)
+			{
+				System.out.println(answer == correctAnswer ? "Correct." : "Wrong.");
+			}
+			
+			else 
+			{
+				System.out.println("Your score is: ");
+				continueLoop = false;
+			}
+	
+		}
 	}
 }
 

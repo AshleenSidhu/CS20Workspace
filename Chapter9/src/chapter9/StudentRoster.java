@@ -1,8 +1,9 @@
 /*
 
-Program: StudentRoster.java          Last Date of this Revision: 02-May-2022
+Program: StudentRoster.java          Last Date of this Revision: 18-May-2022
 
-Purpose: 
+Purpose: Create a StudentRoster application that prompts the user for the number of students in the 
+         class and then prompts the user for each students name and stores the names in an array.
 
 Author: Ashleen Sidhu, 
 School: CHHS
@@ -36,6 +37,7 @@ public class StudentRoster
 		
 		System.out.println("\nStudent Roster");
 		
+		//Displays the array
 		for (int i = 0; i < numStudents; i++)
 		{
 			System.out.println(studentNames[i]);
