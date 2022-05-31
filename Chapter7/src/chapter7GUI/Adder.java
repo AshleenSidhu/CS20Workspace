@@ -15,25 +15,7 @@ import java.util.Scanner;
 
 public class Adder 
 {
-	public int wrongAnswer;
-	
-	public Adder(int w)
-	{
-		w = wrongAnswer;
-	}
-	
-	public static void countPoints()
-	{
-		Scanner input = new Scanner(System.in);
-		
-		if(answer = correctAnswer )
-		{
-			System.out.println("Correct");
-			
-		}
-	}
-	
-	public static void main(String[] args)
+	public static void main(String[] args) 
 	{
 		int randomNum1, randomNum2;
 		int answer;
@@ -57,17 +39,32 @@ public class Adder
 			if(answer != -1)
 			{
 				System.out.println(answer == correctAnswer ? "Correct." : "Wrong.");
-			}
 			
+			}
 			else 
 			{
 				System.out.println("Your score is: ");
 				continueLoop = false;
 			}
-	
 		}
 	}
 }
+/* Screen Dump 
 
+6 + 9 = 6
+Wrong.
+7 + 0 = 5
+Wrong.
+3 + 2 = 6
+Wrong.
+8 + 3 = 56
+Wrong.
+9 + 2 = 5
+Wrong.
+6 + 0 = 6
+Correct.
+3 + 1 = 
 
+ 
+*/ 
 	
