@@ -16,7 +16,7 @@ public class Reverse
 {
 
 	private JFrame frame;
-	private JTextField field;
+	private JTextField numField;
 
 	/**
 	 * Launch the application.
@@ -74,24 +74,24 @@ public class Reverse
 		        {
 		       	 	numbers[i] = i; 
 		        }
-		         
+		     	
 		         for (int i = num_elements - 1; i >= 0; i--)
 		         {
-		        	 field.setText(numbers[i]);
-		       
+		        	 numField.setText(numbers[i]);
 		         }
 			}
 		});
 		
 		frame.getContentPane().add(btnNewButton, BorderLayout.NORTH);
 		
-		field = new JTextField();
-		field.setToolTipText("");
-		field.setHorizontalAlignment(SwingConstants.CENTER);
-		field.setText("Countdown");
-		field.setBounds(10, 21, 414, 192);
-		frame.getContentPane().add(field);
-		field.setColumns(10);
+		numField = new JTextField();
+		numField.setToolTipText("");
+		numField.setHorizontalAlignment(SwingConstants.CENTER);
+		numField.setText("Countdown");
+		numField.setBounds(10, 21, 414, 192);
+		frame.getContentPane().add(numField);
+		numField.setColumns(10);
+		
 		
 	}
 }
