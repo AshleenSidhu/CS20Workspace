@@ -1,8 +1,6 @@
 package chapter9GUI;
 
 import java.awt.EventQueue;
-import java.util.Scanner;
-
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
