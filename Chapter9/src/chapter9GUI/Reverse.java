@@ -1,45 +1,30 @@
 package chapter9GUI;
 
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JButton;
 
 public class Reverse 
 {
 	private JFrame frame;
-	private JTextField textField;
+	static JButton btnNewButton;
 
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) 
-	{
-		JTextField textField = new JTextField("Countdown");
-		
-		final int num_elements = 10;
-        
-        String[] numbers = new String[num_elements];
-        
-        // stores the numbers 
-     	for (int i = 0; i < num_elements; i++)
-        {
-       	 	numbers[i] = i; 
-        }
-     	
-     	//Display Array
-         for (int i = num_elements - 1; i >= 0; i--)
-         {
-        	 textField.setText(numbers[i]);
-         }
-         
-         
-		EventQueue.invokeLater(new Runnable() 
+	{	
+        EventQueue.invokeLater(new Runnable() 
 		{
 			public void run() 
 			{
-				try {
+				try 
+				{
 					Reverse window = new Reverse();
 					window.frame.setVisible(true);
 				} 
@@ -48,7 +33,6 @@ public class Reverse
 					e.printStackTrace();
 				}
 			}
-			
 		});
 	}
 
@@ -70,11 +54,48 @@ public class Reverse
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		textField = new JTextField("Countdown");
-		textField.setHorizontalAlignment(SwingConstants.LEFT);
-		textField.setBounds(10, 11, 255, 238);
-		frame.getContentPane().add(textField);
-		textField.setColumns(10);
+		JPanel panel = new JPanel();
+		panel.setBounds(10, 11, 255, 238);
+		frame.getContentPane().add(panel);
+		panel.setLayout(null);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setRows(10);
+		textArea.setBounds(10, 45, 235, 182);
+		panel.add(textArea);
+		
+		JButton btnNewButton = new JButton("Start");
+		btnNewButton.setBounds(10, 11, 235, 23);
+		panel.add(btnNewButton);
+		
+		
+		btnNewButton.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e) 
+			{
+				 final int num_elements = 10;
+		            
+		         int[] numbers = new int[num_elements];
+		            
+		         // stores the numbers 
+		         for (int i = 0; i < num_elements; i++)
+		         {
+		        	 numbers[i] = i;
+		         }
+		         
+		         textArea.setText("Countdown\n");
+		            
+		         //Display Array
+		         for (int i = num_elements - 1; i >= 0; i--)
+		         {
+		        	 textArea.append(Integer.toString(numbers[i]) + "\n");
+		       
+		         }
+			}
+		         
+		});
 		
 	}
 }
+
+
