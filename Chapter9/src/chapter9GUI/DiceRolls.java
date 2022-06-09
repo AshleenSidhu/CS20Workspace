@@ -24,7 +24,7 @@ import javax.swing.JButton;
 public class DiceRolls 
 {
 	private JFrame frame;
-	private JTextField textField;
+	private JTextField num;
 	int numRolls;
 	int outcome;
 
@@ -105,7 +105,6 @@ public class DiceRolls
 				{
 					textArea.append(i + ": " + outcomes[i] + "\n");
 				}
-				
 			}	
 		});
 	}
