@@ -1,6 +1,6 @@
 /*
 
-Program: .java          Last Date of this Revision: 02-May-2022
+Program: Squares.java          Last Date of this Revision: 09-June-2022
 
 Purpose: Create a Squares application that stores the square of an element's index in an integer array of 5 elements.
 

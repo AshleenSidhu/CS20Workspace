@@ -1,6 +1,6 @@
 /*
 
-Program: StudentRoster.java          Last Date of this Revision: 18-May-2022
+Program: StudentRoster.java          Last Date of this Revision: 09-June-2022
 
 Purpose: Create a StudentRoster application that prompts the user for the number of students in the 
          class and then prompts the user for each students name and stores the names in an array.

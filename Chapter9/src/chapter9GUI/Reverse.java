@@ -1,3 +1,14 @@
+/*
+Program: Reverse.java          Last Date of this Revision: 09-June-2022
+
+Purpose: Create a Reverse application that stores the number corresponding to the elements index in an integer array of 10 elements.
+
+Author: Ashleen Sidhu, 
+School: CHHS
+Course: Computer Programming 20
+ 
+*/
+
 package chapter9GUI;
 
 import java.awt.EventQueue;
